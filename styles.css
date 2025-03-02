@@ -1,273 +1,330 @@
 *{
-  box-sizing: border-box;  
-}
-
-footer a:link{
-    text-decoration: none;
-    color: white;
-}
-
-footer a:visited{
-    text-decoration: none;
-    color: white;
-}
-
-header a:link{
-    text-decoration: none;
-    color: white;
-}
-
-header a:visited{
-    text-decoration: none;
-    color: white;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    font-family: 'Poppins', sans-serif;
-}
-
-
-h1{
-    font-family: Poppins, sans-serif;
-    font-weight: 700;
-    font-size: 34px;
-    text-decoration: none;
-}
-
-h2{
-    text-align: center;
-    padding-top: .5em;
-    padding-bottom: 20px;
-}
-
-header {
-    background-color: #000;
-    color: white;
-    padding: 1em;
-    text-align: center;
-    width: 100%;
-}
-
-header img{
-    text-align: center;
-}
-
-header nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-}
-
-nav{
-    text-align: center;
-}
-
-.about {
-    padding: 2em;
-    text-align: center;
-    p{
-        padding-top: 10px;
-        line-height: 1.5em;
-    }
-}
-
-.projects {
-    padding: 2em;
-}
-
-.container img{
-    border-radius: 250px;
-    height: auto;
-}
-
-.project {
-    background-color: #e6f7ff;
-    padding: 1rem;
-    margin-bottom: 1em;
-    border-radius: 8px;
-    text-align: center;
-    max-height: 500px;
-    border: 1.5px solid rgb(216, 216, 216);
-}
-
-.project:hover{
-    transform: scale(1.02);
-}
-
-.project p{
-    font-style: italic;
-    padding-top: 5px;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.5em;
-}
-
-.project img {
-    max-width: 100%;
-    max-height: 190px;
-    width: 330px;
-    height: auto; 
-    border-radius: 8px;
-    display: block; 
-    margin: 0 auto; 
-}
-
-footer {
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    margin-top: 50px;
-}
-
-.rmore{
-    display: block;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border: 2px solid #65a9f6;
-    border-radius: 10px;
-    margin: 20px auto 30px auto;
-    width: 280px;
-    background-color: #0050A0;
-    font-weight: 500;
-}
-
-video{
-    height: 700px;
-    margin: auto;
-    padding-top: 0;
-}
-
-.rmore:hover {
-    background-color: #65a9f6; 
-    color: black; 
-    border: 2px solid black;
-}
-
-.project-details {
-    padding: 2em;
-    background-color: #ECF9FF;
-    border-radius: 8px;
-    margin: 1em auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    img{
-        max-width: 300px;
-        height: auto;
-        border-radius: 8px;
-        margin-left: 1.5em;
-    }
-    h2 h3{
-        font-weight: 600;
-        color: #333;    
-    }
-    h2{
-        margin: 0;
-        padding-bottom: 25px;
-    }
-    p{
-        margin: 0;
-        text-align: center;
-        line-height: 1.5em;
-    }
-}
-
-h3{
-    text-align: center;
-}
-
-#post{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9;
-    p{
-        padding: 30px;
-        line-height: 1.5em;
-    }
-    h3 {
-        display: flex;
-        gap: 20px; /* Adjust the space between the icon and text */
-        padding: 50px;
-        justify-content: center;
-    }
-    
-    h3 img {
-        width: 34px; 
-        height: auto;
-        display: block;
-    }
-}
-
-.imageposts img{
-    max-width: 950px;
-    height: auto;
-    text-align: center;
-    gap: 100px;
-}
-
-.imageposts{
-    text-align: center;
-    padding: 30px;
-}
-
-
-@media only screen and (min-width: 600px) {
-
-    body{
-        width: 100%;
-        margin: auto;
-    }
-    .project-details{
-        width: 100%;
-        margin: auto;
-        display: flex;
-
-        img{
-            max-width: 700px;
-            height: auto;
-        }
-    }
-
-    .picp{
-        text-align: center;
-        img{
-            margin-left: 0;
-            max-width: 600px;
-            text-align: center;
-            min-width: 500px;
-        }
-    }
-    header {
-        display: flex; 
-        justify-content: space-between; 
-        align-items: center;
-        padding: 1em;
-        background-color: black;
-        color: white;
-    }
-    
-    header h1 {
-        margin: 0; 
-        font-size: 22px;
-        text-align: left; 
-    }
-    
-    header nav {
-        display: flex; 
-        gap: .75em;
-    }
-    
-    header nav a {
-        color: white; 
-        text-decoration: none; 
-        font-size: 18px; 
-        font-weight: 500; 
-    }
-}
+    box-sizing: border-box;  
+  }
+  
+  a:link{
+      text-decoration: none;
+      color: white;
+  }
+  
+  a:visited{
+      text-decoration: none;
+      color: white;
+  }
+  
+  body {
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  h1{
+      font-family: Poppins, sans-serif;
+      font-weight: 700;
+      font-size: 34px;
+      text-decoration: none;
+  }
+  
+  h2{
+      text-align: center;
+      padding-top: .5em;
+      padding-bottom: 20px;
+  }
+  
+  header {
+      background-color: #000;
+      color: white;
+      padding: 1em;
+      text-align: center;
+      width: 100%;
+  }
+  
+  header img{
+      text-align: center;
+      margin-left: 15px;
+      cursor: pointer;
+  }
+  
+  header nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+  }
+  
+  nav{
+      text-align: center;
+  }
+  
+  .about {
+      padding: 2em;
+      text-align: center;
+  }
+  
+  .about p {
+          padding-top: 10px;
+          line-height: 1.5em;
+          text-align: center;
+  }
+  
+  .projects {
+      padding: 2em;
+  }
+  
+  .container img{
+      border-radius: 250px;
+      height: auto;
+  }
+  
+  .project {
+      background-color: #e6f7ff;
+      padding: 1rem;
+      margin-bottom: 1em;
+      border-radius: 8px;
+      text-align: center;
+      max-height: 500px;
+      border: 1.5px solid rgb(216, 216, 216);
+  }
+  
+  .project:hover{
+      transform: scale(1.02);
+  }
+  
+  .project p{
+      font-style: italic;
+      padding-top: 5px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.5em;
+  }
+  
+  #date{
+      font-style: normal;
+  }
+  
+  .project img {
+      display: block;
+      /* max-width: 100%; */
+      max-height: 283px;
+      /* width: 330px; */
+      width: 100%;
+      height: auto; 
+      border-radius: 8px;
+      display: block; 
+      margin: 0 auto; 
+  }
+  
+  footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 50px;
+  }
+  
+  .rmore{
+      display: block;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border: 2px solid #65a9f6;
+      border-radius: 10px;
+      margin: 40px auto 0px auto;
+      width: 280px;
+      background-color: #0050A0;
+      font-weight: 500;
+  }
+  
+  video{
+      height: 700px;
+      margin: auto;
+      padding-top: 0;
+  }
+  
+  .rmore:hover {
+      background-color: #65a9f6; 
+      color: black; 
+      border: 2px solid black;
+  }
+  
+  .project-details {
+      padding: 2em;
+      background-color: #ECF9FF;
+      border-radius: 8px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      img{
+          max-width: 300px;
+          height: auto;
+          border-radius: 8px;
+          margin-left: 1.5em;
+      }
+      h2 h3{
+          font-weight: 600;
+          color: #333;    
+      }
+      h2{
+          margin: 0;
+          padding-bottom: 25px;
+      }
+      p{
+          margin: auto;
+          text-align: center;
+          line-height: 1.5em;
+      }
+  }
+  
+  h3{
+      text-align: center;
+  }
+  
+  #post{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9f9f9;
+  }
+  
+  #post p{
+      padding: 30px;
+      line-height: 1.5em;
+      /* max-width: 200px; */
+  }
+  
+  #post h3 {
+      display: flex;
+      gap: 20px; /* Adjust the space between the icon and text */
+      padding: 50px;
+      justify-content: center;
+  }
+  
+  .imageposts img{
+      max-width: 950px;
+      height: auto;
+      text-align: center;
+      gap: 100px;
+  }
+  
+  .imageposts{
+      text-align: center;
+      padding: 30px;
+  }
+  
+      @media only screen and (min-width: 600px) {
+          header {
+              display: flex; 
+              justify-content: space-between; 
+              align-items: center;
+              padding: 1em;
+              background-color: black;
+              color: white;
+          }
+          
+          header h1 {
+              margin: 0; 
+              font-size: 22px;
+              /* text-align: left; */
+              text-align: right;
+              padding-right: 15px; 
+          }
+          
+          header nav {
+              /* display: flex;  */
+              gap: .85em;
+          }
+      
+          nav img{
+              /* margin-right: 15px; */
+              margin-left: 15px;
+          }
+          
+          header nav a {
+              color: white; 
+              text-decoration: none; 
+              font-size: 18px; 
+              font-weight: 500; 
+          } 
+  
+          /* Ensure the entire Projects Section Uses Full Width */
+          .projects {
+              width: 100%;
+              max-width: 1200px;
+              margin: auto;
+              padding: 2rem;
+          }
+      
+          /* Make Each Project Take Up Full Width */
+          .project {
+              display: grid;
+              grid-template-columns: auto 1fr; /* Left side flexible, right side takes full space */
+              align-items: center;
+              gap: 3.5rem;
+              padding: 2rem;
+              width: 100%;
+          }
+      
+          /* Left Side: h3 and p */
+          .project .text-container {
+              text-align: left;
+          }
+      
+          .project h3 {
+              margin: 0;
+              text-align: left;
+          }
+      
+          .project p {
+              margin-top: 10px;
+              line-height: 1.6;
+          }
+      
+          /* Right Side: Image and "Read More" */
+          .project .image-container {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+          }
+      
+          .project img {
+              width: 100%;
+              max-width: 500px; /* Optimized size */
+              height: auto;
+              margin-right: 0;
+          }
+      
+          .project .rmore {
+              margin-top: 10px;
+              width: 100%; /* Match image width */
+              max-width: 500px; /* Ensures alignment */
+              text-align: center;
+              margin-right: 0;
+          }
+  
+          #post p{
+              max-width: 1000px;
+          }
+  
+          .about p {
+              width: 1000px;
+              text-align: center;
+              margin: auto;
+              padding-top: 30px;
+      }
+  
+      .picp{
+          text-align: center;
+          img{
+              margin-left: 0;
+              max-width: 600px;
+              text-align: center;
+              min-width: 500px;
+      }
+      }
+  
+  }  
