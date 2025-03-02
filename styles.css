@@ -2,12 +2,22 @@
   box-sizing: border-box;  
 }
 
-a:link{
+footer a:link{
     text-decoration: none;
     color: white;
 }
 
-a:visited{
+footer a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+header a:link{
+    text-decoration: none;
+    color: white;
+}
+
+header a:visited{
     text-decoration: none;
     color: white;
 }
@@ -211,11 +221,11 @@ h3{
 @media only screen and (min-width: 600px) {
 
     body{
-        max-width: 1000px;
+        width: 100%;
         margin: auto;
     }
     .project-details{
-        max-width: 1000px;
+        width: 100%;
         margin: auto;
         display: flex;
 
