@@ -11,6 +11,10 @@
       text-decoration: none;
       color: white;
   }
+
+  ul li{
+    line-height: 1.6em;
+  }
   
   body {
       margin: 0;
