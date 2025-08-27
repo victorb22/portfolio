@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodreads Web Redesign</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+<a href="index.html"><img src="images/bcardlogo1.svg" alt="Barajas Logo" class="logo" width="50px" height="50px"></a>
+
+<nav>
+  <a href="postpage1.html">&larr; Back</a>
+  <a href="post10.html">Next &rarr;</a>
+</nav>
+</header>
+
+
+<div class="project-details"> 
+<h2>Goodreads Website Redesign</h2>
+<div class="picp">
+  <img src="images/goodreads-mainpic.png" alt="Project Image">
+</div>
+</div>
+
+    <nav id="postnav">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#design">UI/UX Design</a></li>
+            <li><a href="#revisions">Revisions</a></li>
+            <li><a href="#final">Final Design</a></li>
+        </ul>
+    </nav>
+
+    <section id="overview">
+        <div class="container">
+            <h2>Overview</h2>
+            <div class="content">
+                <p>Goodreads is a popular platform that allows readers to track books, log reviews, and discover new recommendations. Despite its widespread use, it often receives criticism for its outdated interface, cluttered navigation, and underwhelming social features. Many users feel the platform has not evolved to meet the needs of today’s readers.</p>
+                <p>This redesign project set out to explore how Goodreads could better support readers through a more modern, intuitive, and engaging experience. The focus was on addressing usability pain points, improving information architecture and visual hierarchy, and creating a design that feels more aligned with the way people share and discover books today.</p>
+                <p><strong>The Problem</strong>: How can we redesign Goodreads to maintain the website’s core features while improving its visual appeal and ease of use? </p>
+                <p><strong>Role:</strong> UI/UX Designer</p>
+                <p><strong>Brand:</strong> Design Interactive</p>
+                <p><strong>Project Type:</strong> Web Design with Figma</p>
+            </div>
+        </div>
+         <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
+    <section id="research">
+      <div class="container">
+            <h2>UX Research</h2>
+        <div class="content1 space-fix">
+            <div class="content1stack">
+            <strong>Research Goals:</strong>
+            <ul>
+            <li>Analyze the current user base of Goodreads to cater our redesign to the target audience</li>
+            <li>Understand Goodreads’ key strengths and weaknesses to learn which features should be kept and which should be removed</li>
+            <li>Study competitors’ websites to uncover their most useful features</li>
+            <li>Identify significant pain points for users</li>
+            </ul>
+            </div>
+            <div class="content1stack">
+            <strong>Research Methods:</strong>
+            <p>Our research focused on identifying user pain points and opportunities for improvement. We reviewed <strong>user feedback and reviews</strong> of Goodreads to understand common frustrations with the platform’s usability and features. We also conducted a <strong>competitive analysis</strong> of platforms like Letterboxd (for its social and community-driven design) and Hardcover (a modern Goodreads alternative) to see what works well for readers and where Goodreads falls short.</p>
+            </div>
+        </div>
+
+        <p id="randfix" class="rand-text"><strong>User Feedback & Reviews</strong></p>
+        <p id="rand-p-widthfix">To better understand user frustrations with Goodreads, we analyzed reviews from Trustpilot, where the platform holds an average rating of 2.2/5. Many reviewers highlighted recurring issues with the app’s outdated design, confusing navigation, and poor usability.</p>
+        <div class="content1 space-fix">
+            <div class="content1stack">
+                <ul>
+                    <li>Users described the interface as “old” and in need of a serious revamp.</li>
+                    <li>Adding or managing books was called “confusing” and “not optimized”, with some noting they felt they needed tutorials to perform basic actions.</li>
+                    <li>Several reviews criticized the overall user experience and layout, pointing out difficulties with core tasks like joining as an author or adding a book.</li>
+                </ul>
+                <p>These reviews reinforced the need for a redesign focused on modernizing the interface, simplifying core flows, and creating a more intuitive experience for readers.</p>
+            </div>
+            <div class="content1stack">
+            <img src="images/greads-reviews.png" alt="user reviews">
+            </div>
+        </div>
+
+        <p id="randfix" class="rand-text"><strong>Competitive Analysis</strong></p>
+        <div class="content1 space-fix">
+            <div class="content1stack">
+                <p>From Letterboxd, we observed how a platform can feel both social and structured. Its feed and profile design made community interaction feel natural, while its clean navigation encouraged exploration.<br> <br>At the same time, the dense organization of film pages showed us the importance of avoiding feature overload when presenting large sets of content.</p>
+            </div>
+            <div class="content1stack">
+            <img src="images/greads-companalysis1.png" alt="user reviews">
+            </div>
+
+            <div class="content1stack">
+                <p>Hardcover provided a useful contrast with its streamlined navigation and modern visuals. Its interface felt approachable and easy to scan, which helped users focus on key actions right away.<br> <br>However, its lack of community-driven features suggested that even a well-organized platform can feel limited if it doesn’t support reader-to-reader connection.</p>
+            </div>
+            <div class="content1stack">
+            <img src="images/greads-companalysis2.png" alt="user reviews">
+            </div>
+        </div>
+        <p id="randfix" class="rand-text"><strong>Pain Points & Solution</strong></p>
+        <p id="rand-p-widthfix">From this research, my group and I identified the main pain points readers face with Goodreads. We then translated these findings into our design solution for our proposed redesign.</p>
+        <div class="content1 space-fix">
+            <div class="content1stack">
+                <strong>Pain Points</strong>
+                <ul>
+                    <li>Cluttered layout makes navigation difficult for users</li>
+                    <li>Visually unappealing design that makes the website appear outdated</li>
+                    <li>Weak sense of hierarchy and unclear calls to action</li>
+                    <li>Limited features to connect with friends</li>
+                </ul>
+            </div>
+            <div class="content1stack">
+                <strong>Our Solution</strong>
+                <p>We plan to redesign the Goodreads website to prioritize easy navigation, supported through a strong sense of contrast and hierarchy. We aim to incorporate a more unified and vibrant color scheme, giving the website more visual appeal. Lastly, we will place a greater emphasis on community features to allow people to follow their friends’ activity.</p>
+            </div>
+        </div>
+      </div>
+        <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
+    <section id="design">
+        <div class="container">
+            <h2>UI/UX Design</h2>
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <strong>User Flow</strong>
+                <p>To begin our UI/UX design process, we first mapped out the user flow to understand how readers would move through the platform. Since the home page acts as the main entry point, we treated it as the foundation from which all other navigation would stem.</p>
+              </div>
+              <img src="images/greads-flow.png" alt="user flow">
+            </div>
+
+             <div class="content2">
+                <p class="rand-text"><strong>Low-Fidelity Home Page</strong></p>
+                <p>We then created low-fidelity sketches on paper, focusing on how the homepage could connect seamlessly to key flows such as sign-up, account creation, and content discovery. By starting with the homepage and branching outward, we ensured that the design remained consistent and that users could move intuitively between features.</p>
+                <img src="images/greads-lofi-home.png">
+             </div>
+        </div> 
+           <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
+    <section id="revisions">
+        <div class="container">
+            <h2>Revisions</h2>
+            <div class="content2">
+                <p>With a clear understanding of the site flow and homepage structure, we moved into mid-fidelity wireframes. We also established our <strong>goals</strong> for our mid-fi designs:</p>
+                <ul>
+                    <li>Create a basic structure and hierarchy for the website</li>
+                    <li>Use Figma to visualize the website layout</li>
+                    <li>Streamline visual layout and decrease amount of text clutter</li>
+                    <li>Simplify navigation bar</li>
+                </ul>
+                <p class="rand-text"><strong>Home Page Mid-Fidelity</strong></p>
+                <img src="images/greads-homemid.png">
+                <p class="rand-text"><strong>Bookshelf Mid-Fidelity</strong></p>
+                <img src="images/greads-Bookshelf-Mid-Fi.png">
+                <p class="rand-text"><strong>Profile Mid-Fidelity</strong></p>
+                <img src="images/greads-profile-mid.png">
+                <p class="rand-text"><strong>UI Kit</strong></p>
+                <p>After establishing the layout of our mid-fidelity wireframes, we moved onto the UI kit/design system. With the kit, we aimed to expand on the current Goodreads color scheme, adding more green accents for better contrast. As well as, adding brighter green buttons as clear calls to action</p>
+                <img src="images/greads-uikit.png">
+            </div>
+        </div> 
+           <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
+    <section id="final">
+        <div class="container">
+            <h2>Final Website Designs</h2>
+            <div class="content2">
+                <p>With the UI kit in place and the page structures defined, we moved into creating the final high-fidelity designs of the platform.<br> <br>We had <strong>goals</strong> we wanted to aim to achieve with these high-fidelity designs and they were:</p>
+                <ul>
+                    <li>Implement a cohesive color palette to give our website visual appeal</li>
+                    <li>Add book cover images for a polished, final look</li>
+                    <li>Increase personalization of user profile page</li>
+                    <li>Add new sections to the “Discover” page for news and quotes</li>
+                    <li>Add footers to all pages for a professional appearance</li>
+                </ul>
+                <img src="images/greads-home-hifi.png" alt="home hi-fi">
+              <p class="rand-text"><strong>Final Video Showcase</strong></p>
+              <video controls width="600">
+                  <source src="images/greads-finalvideo.mp4" type="video/mp4">
+                  <source src="images/greads-finalvideowebm" type="video/webm">
+                  <source src="images/greads-finalvideo.ogv" type="video/ogg">
+                  Your browser does not support the video tag.
+              </video>
+               <p class="rand-text"><strong>Final Thoughts</strong></p>
+              <p>Through this project, we saw how analyzing successful competitors helps reveal common design patterns and user expectations. We also strengthened our skills in building with Figma components and created an organized design system for frequently used colors, buttons, and elements.<br> <br>Moving forward, we plan to expand the redesign by adding a messaging system between users, finalizing the profile page with “Want to Read” and list sections, and implementing a dropdown menu for the profile icon in the navigation bar.</p>
+            </div>
+        </div>
+                <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
+<footer>
+  © <span id="year"></span> Victor Barajas — Built with HTML, CSS & JS
+    <p><a href="index.html">Portfolio Home</a></p>
+</footer>
+
+<script>
+  // Set dynamic year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
