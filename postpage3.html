@@ -1,136 +1,204 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TruckerSay Web Design</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-
-	  <link href="styles.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
 
-<header>
+<header id="top">
 <a href="index.html"><img src="images/bcardlogo1.svg" alt="Barajas Logo" class="logo" width="50px" height="50px"></a>
 <nav>
-  <a href="postpage9.html">Previous Project</a>
-  <a href="postpage4.html">Next Project</a>
+  <a href="postpage4.html">&larr; Back</a>
+  <a href="postpage1.html">Next &rarr;</a>
 </nav>
 </header>
 
-<section id="post">
 
 <div class="project-details"> 
-<h2>TruckerSay Web Design</h2>
+<h2>TruckerSay Web App</h2>
 <div class="picp">
   <img src="images/p3-mainpic.png" alt="Project 3 Image">
 </div>
-<p><strong>Date:</strong> February 2024</p>
 </div>
 
+<nav id="postnav">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#design">UI/UX Design</a></li>
+            <li><a href="#revisions">Revisions</a></li>
+            <li><a href="#final">Final Design</a></li>
+        </ul>
+</nav>
 
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  Background
-</h3>
-<p><strong>Context:</strong> This was my first project from my first internship. It was with a company called TruckerSay and I got the opportunity to work closely with the COO (Chief Operating Officer). This company aimed to provide a platform which would help both trucking service providers and truckers with make the best informed decisions for either their careers or companies. This was planned to be done by designing a Yelp sort of web service in which providers or businesses in the trucking industry could leave reviews and do research on companies they may want to hire or work for. My task was to create a landing homepage for the website, a sign-up flow, and the entire flow of the search pages, company profiles, and other features that came with creating an account and viewing pages. (Due to a NDA, I can't show all the work I did for this company at this moment). </p>
-<p><strong>Role:</strong> UI/UX Design Intern</p>
-<p><strong>Brand:</strong> TruckerSay</p>
-<p><strong>Project Type:</strong> Desktop Web Design with Figma</p>
-<div class="dashed-line"></div>
+<section id="overview">
+        <div class="container">
+            <h2>Overview</h2>
+            <div class="content">
+                <p>This project is from my first internship, working with a company called TruckerSay. I collaborated closely with the COO to design a platform aimed at helping trucking professionals and those interested in the industry make informed career and business decisions.</p>
+                <p>From the start, my main <strong>goal</strong> was to approach the project from the user’s perspective—understanding the needs of both trucking service providers and individual truckers. The vision was to create a Yelp-style web service where users could review, research, and connect with companies in the trucking industry.</p>
+                <p>My role involved designing the landing homepage, the sign-up flow, and the end-to-end experience of search pages, company profiles, and related account features.<em> (Due to an NDA, I’m unable to share all project details.)</em></p>
+                <p><strong>Role:</strong> UI/UX Design Intern</p>
+                <p><strong>Brand:</strong> TruckerSay</p>
+                <p><strong>Project Type:</strong> Web Design with Figma</p>
+            </div>
+        </div>
+         <p class="top"><a href="#top">Top ↑</a></p>
+ </section>
 
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  UX Research
-</h3>
-<p>At the beginning of my internship, I spoke with 15 truck drivers to understand their experiences in choosing employers. I wanted to learn how they figure out which companies are worth working for and what that decision-making process looks like for them. While I asked about several topics related to our planned features, one insight stood out—many drivers struggled to determine which employers were reputable because there wasn’t a dedicated review platform. With this in mind, I created two user personas that reflected the challenges and needs I saw in the survey responses, combined with my own research.</p>
-<div class="imageposts">
-  <img src="images/p3up.png" alt="ux persona">
-</div>
-<br>
-<div class="imageposts">
-  <img src="images/p3uxp.png" alt="ux persona">
-</div>
-
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  UX/UI Design 
-</h3>
-<p>From here, I moved onto the low-fidelity design phase for the company's homepage. I first started by drawing my designs for the homepage on paper, and then digitally after we received some feedback from the executive and design teams. We decided to aim to provide not only a review platform, but also integrate a separate interface and dashboard for businesses signing up for this site and integrating a rewards systems for users to encourage activity on the platform also.</p>
-<div class="imageposts">
-  <img src="images/lowfip3.png" alt="low-fidelity design">
-</div>
-<br>
-<div class="imageposts">
-  <img src="images/p3homelofi2.png" alt="low-fidelity design">
-</div>
-
-<p>We also began to work on what the rewards design could be and features it could include, such as badges to represent a user's level of activity and how long they've been a member of the platform.</p>
-<div class="imageposts">
-    <img src="images/p3user-journey.png" alt="user journey for rewards">
-  </div>
-  <div class="imageposts">
-    <img src="images/p3badges.png" alt="user badges" width="400" height="350">
-  </div>
-
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  Final Designs
-</h3>
-<p>Over the course of several months, we finalized the entire website for TruckerSay. This included profile and company pages, sign-up and log-in, search and review pages, trucking provider sign-up, and provider dashboards. The startup has yet to launch so the amount of my work I can show is constrained by a NDA.</p>
-<div class="imageposts">
-  <img src="images/Get Started_newaccount.png" alt="new account">
-</div>
-
-<p>With the homepage, we aimed to create calls to action to sign-up to earn rewards, and to mostly inform the visitors of the benefits and what the company does. Above is the sign-up page and the homepage design was finalized to look like this:</p>
-<div class="imageposts">
-  <img src="images/homepg-tsay.png" alt="TruckerSay homepage">
-</div>
-<p>For the search to review pages, I mostly worked on designing for all search possibilities. This included thinking about what a user may want to see on the landing page for this feature and what would happen if their search matched or didn't match. Or if they wanted to navigate towards a company's account page and review their content. A search that didn't match prompted the user to add the company, similar to Yelp, which was an entire other flow I designed as well. The final designs of the landing pages for reviewing providers and new businesses looking to sign up were finalized to this:</p>
-<div class="imageposts">
-  <img src="images/p3hifireviewhome.png" alt="review homepage">
-</div>
-<br>
-
-<div class="imageposts">
-  <img src="images/ftpp3hifi.png" alt="for new trucking providers landing page">
-</div>
-
-<p>The reward pages were also completed, and provided a space for users to review their activity, manage accounts, and track their points to eventually win prizes they can use on the road. As well as the trucking provider dashboard, which is an entirely seperate interface feature from regular users.</p>
-<div class="imageposts">
-    <img src="images/p3rewards-dash.png" alt="new user rewards homepage">
-</div>
-<div class="imageposts">
-    <img src="images/p3rewardsOpen.png" alt="logged in user reward point tracker">
-</div>
-<div class="imageposts">
-    <img src="images/p3provider-dash.png" alt="logged in provider dash">
-</div>
-<div class="imageposts">
-    <img src="images/p3provider-dash2.png" alt="logged in provider dash 2">
-</div>
-
-<p>And here is a final video showcasing some of the designs such as provider account and search results.</p>
-<video controls width="800">
-    <source src="images/p3final-vid-design.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-<p><strong>Final Thoughts:</strong> Overall, after completing this internship, I grew a lot as a designer and saw how valuable it is to effectively collaborate with others. This experience helped me put into practice what I have been learning in my design courses at UC Davis and I plan to take all the lessons learned with me as I move further into my career.</p>
+<section id="research">
+        <div class="container">
+            <h2>UX Research</h2>
+            <div class="content2">
+              <p>At the start of my internship, I interviewed 15 truck drivers to understand how they choose employers and what factors matter most in that decision. I wanted to learn where they look for information, how they decide which companies are worth working for, and what challenges they face along the way.<br> <br>One clear takeaway was that many drivers had trouble figuring out which employers were trustworthy because there was no dedicated review platform. Using these insights, I created a user persona and an empathy map to represent their needs, frustrations, and goals, which helped guide the design work moving forward.</p>
+              <p class="rand-text"><strong>User Persona</strong></p>
+              <img id="c2imgfix" src="images/p3up.png" alt="ux persona">
+              <p class="rand-text"><strong>Empathy Map</strong></p>
+              <img id="c2imgfix" src="images/p3uxp.png" alt="ux persona">
+            </div>
+            <p class="rand-text"><strong>Competitive Analysis</strong></p>
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <p>
+                  After creating the empathy map, I reviewed two similar platforms—TruckerPath and CDLLife—
+                  to understand how they structure their navigation, present features, and communicate value.
+                  This gave me insight into the industry and helped me decide how I should begin to construct the home page.
+                </p><br>
+              <em>Key takeaways for home page design:</em>
+                <ul>
+                  <li>Keep logo in the upper left for easy navigation.</li>
+                  <li>Use a compelling hero image with a clear, short value statement.</li>
+                  <li>Consistent CTAs in high visibility areas.</li>
+                  <li>Features with short descriptions and visuals in a card layout.</li>
+                  <li>Brand identity that aligns with target audience</li>
+                </ul>
+              </div>
+                <img src="images/tsay-companalysis.png">
+            </div>
+        </div>
+                <p class="top"><a href="#top">Top ↑</a></p>
 </section>
 
+<section id="design">
+        <div class="container">
+            <h2>UI/UX Design</h2>
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <p>Using the key takeaways from the competitive analysis, I moved into the low-fi designs for the home page. I started by sketching ideas on paper, focusing on clear navigation, strong hero messaging, and consistent calls-to-action.</p>
+              </div>
+              <img src="images/lowfip3.png" alt="low-fidelity design">
+            </div>
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <p>After getting feedback from the executive and design teams, we moved the designs into a digital format to refine the layout. The site would be a review platform with a rewards system to encourage users to stay active on the platform, and have a separate interface and dashboard for businesses owners/service providers. These first wireframes shaped the overall structure and design style for the site moving forward.</p>
+              </div>
+              <img src="images/p3homelofi2.png" alt="low-fidelity design">
+            </div>
+                          <p class="rand-text"><strong>User Flow</strong></p>
+
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <p>Once the basic structure of the home page was in place, we shifted focus to mapping out the user flow. The <strong>goal</strong> was to understand exactly how users would move from the home page to other areas of the site and how each pathway would connect to key features.</p>
+                <p>We mapped flows for accessing provider profile pages, writing and submitting reviews, and navigating the rewards system for active users. This step helped make sure the navigation felt clear and that users could get to where they needed without unnecessary steps.</p>
+              </div>
+                <img src="images/tsay-homepg-uflow.png">
+            </div>
+        </div>
+                <p class="top"><a href="#top">Top ↑</a></p>
+</section>
+
+<section id="revisions">
+        <div class="container">
+            <h2>Revisions</h2>
+            <div class="content2">
+              <p>After mapping out potential paths users could take from the home page, we moved forward with finalizing the design. This included establishing a UI kit for the site and refining the layout, visuals, and interactions to align with the user flow.</p>
+              <img src="images/Design-tsay-System.png" alt="TruckerSay homepage">
+
+              <p>With the home page, we aimed to create calls to action to sign-up to earn rewards, and to inform visitors of the benefits and what the company does.</p>
+              <p class="rand-text"><strong>Final Home Page Design</strong></p>
+              <img src="images/homepg-tsay.png" alt="TruckerSay homepage">
+            </div>
+            <div class="content2">
+              <p>The next step after the home page was to focus on the four main pages of the site: rewards system for users, for service providers, review trucking providers, and writing a review. We outlined the potential flows, structure, and features for each section based on discussions with the executive team about business goals and user needs.</p>
+              <p class="rand-text"><strong>Rewards System User Flow</strong></p>
+              <img id="cimgfix" src="images/p3user-journey.png" alt="user journey for rewards">
+            </div>
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <p>Starting with the rewards system, we began by mapping user flows for how members would access and interact with rewards from the homepage and other areas of the site. We started exploring features for our main pages such as badges for our rewards system.</p>
+                <p>We wanted something that could make the rewards page meaningful and encourage continued activity. One idea was to use badges that visually represent a user’s level of activity and how long they’ve been a part of the platform. These early concepts helped us think about how rewards could motivate engagement and build a sense of community within TruckerSay.</p>
+              </div>
+              <img src="images/p3badges.png" alt="user badges" width="600">
+            </div>
+            <div class="content2">
+              <p>Throughout the site, we made sure to consider both signed-out and signed-in states, since new users exploring the platform would need different information than those with accounts.</p>
+              <p> For signed-out providers, we designed dedicated landing pages that introduced the platform, explained benefits, and gave them a clear path to sign up. For signed-in providers, the focus was toward features that supported managing their profile, viewing reviews, and engaging with features/drivers. This created an entry point for curious visitors while providing tools active users would need.</p>
+              <p class="rand-text"><strong>For Trucking Providers Landing Page (Signed-Out) </strong></p>
+              <img src="images/ftpp3hifi.png" alt="for new trucking providers landing page">
+            </div>
+        </div>
+                <p class="top"><a href="#top">Top ↑</a></p>
+</section>
+
+    <section id="final">
+        <div class="container">
+            <h2>Final Designs</h2>
+            <div class="content2">
+              <p>Over the course of several months, we finalized the platform for TruckerSay. This included profile and company pages, the sign-up and log-in flows, search and review pages, trucking provider sign-up, and provider dashboards. Since the startup has not yet launched, I am limited in how much of my work I can share publicly due to an NDA.</p>
+              <p class="rand-text"><strong>Create an Account</strong></p>
+              <img src="images/Get Started_newaccount.png" alt="new account">
+              <p class="rand-text"><strong>Rewards</strong></p>
+              <p>The rewards pages were also completed, giving users a dedicated space to review their activity, manage their account, and track points. These points could then be redeemed for prizes they could use on the road, helping to encourage ongoing participation and engagement on the platform.</p>
+              <img src="images/p3rewards-dash.png" alt="new user rewards homepage">
+              <img src="images/p3rewardsOpen.png" alt="logged in user reward point tracker">
+               <p class="rand-text"><strong>Review Trucking Providers</strong></p>
+               <p>For the search and review pages, my focus was on designing for all possible search outcomes. I started by considering what users would want to see on the landing page, and then mapped out flows for when a search returned matches, when it didn’t, and when users chose to navigate to a company’s profile to review its content. In cases where no results appeared, the design prompted users to add a new company—similar to Yelp—which became its own separate flow.</p>
+              <img src="images/p3hifireviewhome.png" alt="review homepage">
+               <p class="rand-text"><strong>For Trucking Providers</strong></p>
+              <p>For these pages, we designed an entirely separate dashboard from regular users. Here, the focus was on what businesses and service providers would want to see and manage in an employer platform.</p>
+              <p>This included analytics for tracking engagement, tools for shaping their brand, features to connect with job seekers and services, and options for customizing their profile. The <strong>goal</strong> was to give providers a professional space to manage their presence on TruckerSay while making it easy to track performance and interactions.</p>
+              <img src="images/p3provider-dash.png" alt="logged in provider dash">
+              <img src="images/p3provider-dash2.png" alt="logged in provider dash 2">
+
+              <p class="rand-text"><strong>Final Video Showcase</strong></p>
+              <p>And here is a final video showcasing some of the designs such as the provider account and search results.</p>
+              <video controls width="800">
+                  <source src="images/p3final-vid-design.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+              <p class="rand-text"><strong>Final Thoughts</strong></p>
+              <p>Overall, this internship helped me grow significantly as a designer and showed me the value of collaborating closely with a team. It gave me the opportunity to put into practice the skills I had been developing in university as a design student, while also learning how to adapt those skills to real-world challenges. Moving forward, I plan to carry these lessons with me as I continue building my career in design.</p>
+            </div>
+             <p class="top"><a href="#top">Top ↑</a></p>
+        </div>
+    </section>
+
 <footer>
-  <p><a href="index.html">Victor Barajas Portfolio</a></p>
-  <p><a href="&#118;&#098;&#046;&#118;&#105;&#099;&#116;&#111;&#114;&#046;&#098;&#097;&#114;&#097;&#106;&#097;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email Me</a> </p>
+  © <span id="year"></span> Victor Barajas — Built with HTML, CSS & JS
+    <p><a href="index.html">Portfolio Home</a></p>
 </footer>
+
+<script>
+  // Set dynamic year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 
 </body>
 </html>

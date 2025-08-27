@@ -13,88 +13,137 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
-
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<header>
+<header id="top">
 <a href="index.html"><img src="images/bcardlogo1.svg" alt="Barajas Logo" class="logo" width="50px" height="50px"></a>
-
 <nav>
-  <a href="postpage3.html">Previous Project</a>
+  <a class="arrow" href="postpage3.html">Next &rarr;</a>
 </nav>
 </header>
-
-<section id="post">
 
 <div class="project-details"> 
 <h2>HikeHER Dallas Web Design</h2>
 <div class="picp">
   <img src="images/p4-mainpic.png" alt="Project 4 Image">
 </div>
-<p><strong>Date:</strong> September 2024</p>
+<!-- <p><strong>Date:</strong> September 2024</p> -->
 </div>
 
-<div class="dashed-line"></div>
+    <nav id="postnav">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#design">UI/UX Design</a></li>
+            <li><a href="#revisions">Revisions</a></li>
+            <li><a href="#final">Final Design</a></li>
+        </ul>
+    </nav>
 
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  Background
-</h3>
-<p><strong>Context:</strong> My third internship began in September of 2024 with a Dallas based social impact organization named HikeHER Dallas. I once again had the opportunity to work closely with the executive team for this organization and led the design team. HikeHer Dallas is all about empowering women through group hikes and creating meaningful outdoor experiences. They host fundraisers to uplift and support the breast cancer community with resources, care packages, and events. For their website redesign, I worked on creating pages for their blog, events, donations, sponsor sign-up, homepage, and a section about the founder, making sure their mission and values came through in every part of the site.</p>
-<p><strong>Role:</strong> UI/UX Design Intern</p>
-<p><strong>Brand:</strong> HikeHER Dallas</p>
-<p><strong>Project Type:</strong> Desktop Web Design with Figma and Development</p>
-<div class="dashed-line"></div>
+    <section id="overview">
+        <div class="container">
+            <h2>Overview</h2>
+            <div class="content">
+                <p>During my internship with HikeHER Dallas, a Dallas-based social impact organization, I was tasked with redesigning their old website. I collaborated closely with the executive team and led the design team throughout the project. HikeHER Dallas empowers the breast cancer community through group hikes, shared outdoor experiences, and hosting fundraisers to provide resources, care packages, and events.</p>
+                <p>For the redesign,<strong> my goal</strong> was to create a digital space that <strong>fostered community</strong>, <strong>provided clear access to information</strong>, and <strong>kept members connected to upcoming events</strong>. The previous website faced <strong>key challenges:</strong> it lacked sufficient information for both current and potential members, and its information architecture failed to fully introduce the organization or clearly communicate what it does.</p>
+                <p>The final site included a blog, events calendar, donation portal, sponsor sign-up page, homepage, and a founder’s section — each designed to reflect the organization’s mission and values.</p>
+                <p><strong>Role:</strong> UI/UX Design Intern</p>
+                <p><strong>Brand:</strong> HikeHER Dallas</p>
+                <p><strong>Project Type:</strong> Web Design with Figma</p>
+            </div>
+        </div>
+         <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
 
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  UX/UI Design
-</h3>
-<p>After meeting with the founder of the organization and reviewing their current website, I began a low fidelity design of the company's homepage. They had an established following and wanted to provide more features that would make their website a one-stop platform for all things HikeHer Dallas. This is why I, along with the executive team, planned to have and create pages that provided all the information an interested or established user would want to browse; such as events, donation information, and a blog.</p>
-<div class="picp">
-  <img src="images/p4homelofi.png" alt="Project 4 Image">
-</div>
-<p>For the blog and events pages, I wanted to make upcoming, current, and past posts to be available to viewers. As well as, make it easy for them to access and add to their calendar, in the case of the events page. Below are the low and mid fidelity designs for the blog, events, and donations pages.</p>
-<div class="picp">
-    <img src="images/p4events.png" alt="Project 4 Image">
-  </div>
-  <br>
-  <div class="picp">
-    <img src="images/p4blog-draft.png" alt="Project 4 Image">
-  </div>
+    <!--/ /-------- UX Research Section --------/ /-->
+    <section id="research">
+        <div class="container">
+            <h2>UX Research</h2>
+            <div class="content1">
+              <div class="content1stack">
+              <strong>UX Persona</strong>
+                <p>For my user research, I distributed a survey to four current HikeHer members and two women who were considering attending an upcoming hike. The questions covered both personal background and their relationship with the organization — including their goals, challenges, event participation habits, and what information they look for most on the website.</p>
+                <p>I supplemented the survey responses I collected with data-driven research to create a user persona to identify key variables, spot patterns of pain points/site strengths, and focus on our target audience.</p>
+              </div>
+                <img src="images/hh-persona-ux.png">
+            </div>
+            <div class="content1">
+              <div class="content1stack">
+              <strong>Competitive Analysis</strong>
+                <p>I then moved on to a competitive analysis in which I identified a clear information architecture, consistent UI design, and clear pathways to CTAs as key goals with the site design.</p>
+              </div>
+                <img src="images/hh-comp-analysis.png">
+            </div>
+        </div>
+        <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
 
-  <p>For the donations page, it was essential that it be impactful and clearly describe the company's mission and goals. I wanted to make it clear how funds would help and the resources they would be going to.</p>
-<div class="picp">
-  <img src="images/p4Donations.png" alt="Project 4 Image">
-</div>
-<br>
+        <!--/ /-------- Design Section --------/ /-->
+    <section id="design">
+        <div class="container">
+            <h2>UI/UX Design</h2>
+            <div class="content2">
+                <p>I began the design phase with low-fidelity wireframes of HikeHER’s homepage to map out the overall structure before focusing on visual details. My goal was to lay out all planned features and potential user flows so the site could function as a one-stop platform for the community.<br> <br>Working closely with the executive team, I identified key pages — including Events, Donations, and a Blog — that would address the needs of both new visitors and existing members. Once the layout and navigation paths were clear, I moved into refining the UI design, applying the organization’s brand identity and visual style to bring the structure to life.</p>
+                <img src="images/p4homelofi.png" alt="Project 4 Image">
+                <p>After finalizing the homepage’s structure and flow, I shifted focus to building the UI kit and design system, ensuring consistent components, typography, and color usage across the project.</p>
+                <img src="images/hher-uikit.png" alt="Project 4 Image">
+            </div>
+        </div>
+        <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
 
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  Final Design and Web Development
-</h3>
-<p>First, here is the design for the homepage: With this design, I built upon their current website to further reflect the purpose of the organization and offer more information about the community and what it is to be a member. Throughout this process, I was collaborating with the development team to ensure that my ideas were realistic and something they could create in HTML,CSS, and JavaScript.</p>
-<div class="picp">
-  <img src="images/p4homehifi.png" alt="Project 4 Image">
-</div>
+    <section id="revisions">
+        <div class="container">
+            <h2>Revisions</h2>
+            <div class="content2">
+              <p>With the UI kit and homepage structure in place, I moved on to designing the remaining pages, applying the established components to maintain visual and functional consistency throughout the site.<br> <br>For the blog and events pages, I wanted to make upcoming, current, and past posts were available to viewers. As well as, in the case of the events page, make it easy to access and add to their calendar. Below are the low and mid fidelity designs for events, blog, and donations.</p>
+              <p class="rand-text"><strong>Events Page</strong></p>
+              <img src="images/p4events.png" alt="Project 4 Image">
+              <p class="rand-text"><strong>Blog Page</strong></p>
+              <img src="images/p4blog-draft.png" alt="Project 4 Image">
+              <p class="rand-text"><strong>Donations Page</strong></p>
+              <p>For the donations page, it was essential it be impactful and clearly describe the company's mission and goals. I focused on creating clear CTAs and information layout so visitors could quickly understand how their contributions would make a difference and where the funds would go.</p>
+              <img src="images/p4Donations.png" alt="Project 4 Image">
+            </div>
+        </div>
+                <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
 
-<p>And then here is the link to the live <a href="https://www.hikeher.org/">website</a> now and a video that showcases all of the pages I designed.</p>
-<video controls width="800">
-    <source src="images/p4final-vid.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-<p><strong>Final Thoughts:</strong> This internship was also a learning experience, as I was once again designing for an organization in an industry that required me to research and understand the users' perspectives. Diving into an unfamiliar field pushed me to adapt quickly, analyze user behaviors, and design solutions that align with their needs.</p>
-
-<div class="dashed-line"></div>
-</section>
+    <section id="final">
+        <div class="container">
+            <h2>Final Designs & Web Development</h2>
+            <div class="content2">
+              <p>For the redesigned homepage, I built upon their existing site to better reflect the organization’s purpose, highlight the community, and showcase the value of membership. Throughout this process, I worked closely with the development team to ensure my design decisions were both impactful and feasible for implementation.</p>
+              <p class="rand-text"><strong>Final Home Page</strong></p>
+              <img src="images/p4homehifi.png" alt="Project 4 Image">
+              <p class="rand-text"><strong>Final Video Showcase & Live Website</strong></p>
+              <p>Here is the link to the live <a href="https://www.hikeher.org/">website</a> now and a video below that showcases the website I designed.</p>
+              <video controls width="800">
+              <source src="images/p4final-vid.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <p class="rand-text"><strong>Final Thoughts</strong></p>
+              <p>This project required me to research and understand the users’ perspectives. Diving into an unfamiliar field pushed me to adapt quickly, analyze user behaviors, and design solutions that aligned with their needs. It also reinforced the importance of combining clear structure with engaging visuals, and collaborating with the development team to ensure the design was both impactful and achievable. I would have liked to design a mobile version as well, since surveys showed some users were mobile-first, but it was outside the scope of this project and what was asked of me at the time.</p>
+            </div>
+        </div>
+                <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
 
 <footer>
-  <p><a href="index.html">Victor Barajas Portfolio</a></p>
-  <p><a href="&#118;&#098;&#046;&#118;&#105;&#099;&#116;&#111;&#114;&#046;&#098;&#097;&#114;&#097;&#106;&#097;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email Me</a> </p>
+  © <span id="year"></span> Victor Barajas — Built with HTML, CSS & JS
+    <p><a href="index.html">Portfolio Home</a></p>
 </footer>
+
+<script>
+  // Set dynamic year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

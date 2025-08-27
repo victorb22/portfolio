@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Learning Community UI/UX Design with Figma</title>
+    <title>SkillSwap Web Design</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-
-	  <link href="styles.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -21,64 +25,123 @@
 <header>
   <a href="index.html"><img src="images/bcardlogo1.svg" alt="Barajas Logo" class="logo" width="50px" height="50px"></a>
 <nav>
-  <a href="postpage8.html">Previous Project</a>
-  <a href="postpage3.html">Next Project</a>
+  <a href="postpage5.html">&larr; Back</a>
+  <a href="postpage4.html">Next &rarr;</a>
 </nav>
 </header>
 
-<section id="post">
 
 <div class="project-details"> 
-<h2>Online Learning Community Web Design with Figma</h2>
+<h2>UCD SkillSwap Web Design</h2>
 <div class="picp">
-<img src="images/p7-mainpic.png" alt="Project 8 Image">
+<img src="images/skillsw-main.png" alt="Project 8 Image">
 </div>
-<p><strong>Date:</strong> March 2025</p>
-</div>
-
-<div class="dashed-line"></div>
-
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  Background
-</h3>
-<p><strong>Context:</strong> This web design project was developed for a business class, focusing on creating a social learning platform tailored for UC Davis students. Inspired by platforms like Skillshare, Coursera, and MasterClass, it was designed to support current UCD courses across various majors, offering a more specialized and campus-specific learning experience for students looking to explore different major options.</p>
-<p><strong>Role:</strong> UI/UX Designer</p>
-<p><strong>Project Type:</strong> UI/UX Design with Figma</p>
-
-<div class="dashed-line"></div>
-
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  UX Research
-</h3>
-<p>I started by creating a user persona based on a UC Davis student exploring different majors. To inform this, I interviewed four UCD students and found through research that over 50% of UC Davis undergraduates change their major. Using these insights, I developed a user persona that reflects the needs and challenges of students navigating their academic paths.</p>
-<div class="imageposts">
-  <img src="images/p7-userpersona.png" alt="user persona" width="800">
+<!-- <p><strong>Date:</strong> March 2025</p> -->
 </div>
 
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  Low/Mid-Fidelity Designs
-</h3>
-<p>I then moved onto Figma, and began brainstorming what landing pages could look like for signed in users.</p>
-<div class="imageposts">
-  <img src="images/p7-lofi:midfi.png" alt="lofi/midfi landing page" width="800">
-</div>
-<p>This project is in progress but feel free to check out what I have so far down below!</p>
-<div class="imageposts">
-    <video controls width="600">
-        <source src="images/p7vid-1.mp4" type="video/mp4">
-        <source src="images/p7vid-1.webm" type="video/webm">
-        <source src="images/p7vid-1.ogv" type="video/ogg">
-        Your browser does not support the video tag.
-    </video>
-</div>
-</section>
+    <nav id="postnav">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#design">UI/UX Design</a></li>
+            <li><a href="#revisions">Revisions</a></li>
+            <li><a href="#final">Final Design</a></li>
+        </ul>
+    </nav>
+
+    <section id="overview">
+        <div class="container">
+            <h2>Overview</h2>
+            <div class="content">
+              <p>This project was developed as part of a business course with the goal of designing a social learning platform specifically for UC Davis students. Drawing inspiration from platforms like Skillshare, Coursera, and MasterClass, I set out to create a campus-focused solution that supports existing UCD courses across different majors.</p>
+              <p>The intent was to provide students with a more tailored and accessible way to explore new subjects, discover major options, and connect with peers through shared learning experiences. My role focused on understanding student needs and translating them into an example of a website we could present that balanced usability and accessibility.</p>
+              <p>This is a project I’m currently working on and continuing to design and expand.</p>
+              <p><strong>Role:</strong> UI/UX Designer</p>
+                <p><strong>Purpose:</strong> Design project</p>
+                <p><strong>Project Type:</strong> Web Design with Figma</p>
+            </div>
+        </div>
+         <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
+
+   <section id="research">
+        <div class="container">
+            <h2>UX Research</h2>
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <strong>UX Persona</strong>
+                <p>I wanted to better understand my target audience, so I began by researching the academic experiences of UC Davis students. I interviewed four undergraduates and discovered that more than 50% of UC Davis students change their major at least once.<br> <br>These insights highlighted the uncertainty and curiosity many students face when exploring different paths. Using this research, I created a user persona representing a UC Davis student navigating major exploration, which helped guide design decisions to address their needs and challenges.</p>
+              </div>
+                <img src="images/p7-userpersona.png" alt="swot">
+            </div>
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <strong>Competitive Analysis</strong>
+                <p>I conducted a competitive analysis of Coursera, Skillshare, and MasterClass. I compared their course offerings, pricing, and value propositions to understand strengths and gaps in the online learning market.</p>
+                <p>I saw an opportunity to design a campus-specific site that combines the credibility of structured learning with the accessibility and affordability students need. By focusing on UC Davis students, the platform would offer specialized content that aligns with coursework and creates a community-based learning experience that competitors lack.</p>
+              </div>
+                <img src="images/skswap-companalysis.png" alt="Competitive analysis">
+            </div>
+       </div>
+                <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
+    <section id="design">
+        <div class="container">
+            <h2>UI/UX Design</h2>
+          <div class="content2">
+            <p>I then moved into low-fidelity wireframes in Figma to establish the structure of the platform. I began by laying out the landing page for returning users, focusing on clarity and easy navigation.<br> <br>Recommended and current courses were organized into card layouts, making it simple for students to scan, recognize, and select content. This approach helped me visualize how information would be prioritized and how users could quickly access courses that were most relevant to them.</p>
+             <p class="rand-text"><strong>Low-Fidelity Design</strong></p>
+            <img id="c2imgfix" src="images/p7-lofi_midfi.png" alt="lofi/midfi landing page" width="800">
+          </div>
+          <p class="rand-text"><strong>UI Kit</strong></p>
+          <div class="content1 space-fix">
+              <div class="content1stack">
+                <p>After establishing my layout, I created a Figma UI kit to ensure consistency across the platform, defining typography, colors, and reusable components like dropdowns, course cards, and buttons. This helped me maintain a consistent design style as new content and features were added.</p>
+              </div>
+                <img src="images/uikit-skswap.png" alt="Competitive analysis">
+          </div>
+       </div>
+                <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
+    <section id="revisions">
+      <div class="container">
+          <h2>Revisions</h2>
+          <div class="content2">
+            <p>Using the UI kit, I applied colors, fonts, images, and course information to my wireframes to create the mid-fidelity design. This brought the layouts to life while maintaining consistency across course cards and components.</p>
+            <img id="c2imgfix" src="images/midfi-skswap.png" alt="lofi/midfi landing page" width="800">
+          </div>
+       </div>  
+            <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
+    <section id="final">
+      <div class="container">
+          <h2>Final Design</h2>
+          <div class="content2">
+          <p>I then continued refining this landing page for returning users to present for my business project. Here is a video showcasing the final design and components. I am continuing to expand the project by adding more screens and features in the future.</p>
+          <video controls width="600">
+              <source src="images/skswap-vid.mp4" type="video/mp4">
+              <source src="images/skswap-vid.webm" type="video/webm">
+              <source src="images/skswap-vid.ogv" type="video/ogg">
+              Your browser does not support the video tag.
+          </video>
+          <p class="rand-text"><strong>Final Thoughts</strong></p>
+          <p>This project highlighted the value of understanding the target audience and conducting competitive analysis to identify gaps and opportunities. Designing with these insights helped create a product tailored to users’ needs while leaving room for future improvements.</p>
+          </div>
+       </div>  
+            <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
 <footer>
-  <p><a href="index.html">Victor Barajas Portfolio</a></p>
-  <p><a href="&#118;&#098;&#046;&#118;&#105;&#099;&#116;&#111;&#114;&#046;&#098;&#097;&#114;&#097;&#106;&#097;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email Me</a> </p>
+  © <span id="year"></span> Victor Barajas — Built with HTML, CSS & JS
+    <p><a href="index.html">Portfolio Home</a></p>
 </footer>
-
+<script>
+  // Set dynamic year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

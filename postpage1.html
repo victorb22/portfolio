@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script> 
 </head>
 
 <body>
@@ -21,104 +24,134 @@
 <header>
   <a href="index.html"><img src="images/bcardlogo1.svg" alt="Barajas Logo" class="logo" width="50px" height="50px"></a>
 <nav>
-  <a href="postpage2.html">Next Project</a>
+    <a href="postpage3.html">&larr; Back</a>
+  <a href="post11.html">Next &rarr;</a>
 </nav>
 </header>
-
-<section id="post">
 
 <div class="project-details"> 
 <h2>AggiePass Mobile App</h2>
 <div class="picp">
 <img src="images/ap.png" alt="Project 1 Image">
 </div>
-<p><strong>Date:</strong> September 2023</p>
+<!-- <p><strong>Date:</strong> September 2023</p> -->
 </div>
 
-<div class="dashed-line"></div>
+    <nav id="postnav">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#design">UI/UX Design</a></li>
+            <!-- <li><a href="#revisions">Revisions</a></li> -->
+            <li><a href="#final">Final Design</a></li>
+        </ul>
+    </nav>
 
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  Background
-</h3>
-<p><strong>Context:</strong> Davis has a multitude of food options, from the Coho, to the Silo, to dining halls, and food trucks. My group and I wanted to create an exciting digital platform that rewards current students for visiting their favorite on-campus dining spots.</p>
-<p><strong>Role:</strong> UI/UX Designer</p>
-<p><strong>Brand:</strong> Design Interactive</p>
-<p><strong>Project Type:</strong> Mobile Application Design with Figma</p>
+    <section id="overview">
+        <div class="container">
+            <h2>Overview</h2>
+            <div class="content">
+              <p>Davis has a multitude of food options, from the Coho, to the Silo, to dining halls, and food trucks. My group and I wanted to create an exciting digital platform that rewards current students for visiting their favorite on-campus dining spots.</p>
+              <p>We wanted to design more than just a food app, we aimed to encourage students to explore campus dining in a fun and rewarding way. Our goal was to create a platform that not only highlights dining variety but also builds community by turning meals into shared experiences.</p>
+              <p>By gamifying dining through rewards and incentives, we hoped to make campus life more engaging while supporting student-run and university-operated food services.</p>
+                <p><strong>Role:</strong> UI/UX Designer</p>
+                <p><strong>Brand:</strong> Design Interactive</p>
+                <p><strong>Project Type:</strong> Mobile Application Design with Figma</p>
+            </div>
+        </div>
+         <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
 
-<div class="dashed-line"></div>
+    <section id="research">
+        <div class="container">
+            <h2>UX Research</h2>
+            <div class="content2">
+              <p>To make sure our design decisions were grounded in real student needs, we started by conducting UX research. We focused on <strong>four key methods</strong>: competitor analysis to understand how existing food and reward apps approached engagement, student interviews with UC Davis peers to hear directly about their dining habits and motivations, usability testing to uncover early pain points in our wireframes, and prototype testing to refine interaction flows. This helped us validate our ideas and begin thinking about pain points and potential solutions.</p>
+            </div>
+              <p class="rand-text"><strong>Competitive Analysis</strong></p>
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <p>After reviewing existing dining and reward apps, we identified gaps and opportunities that helped guide our next steps:</p>
+                  <ul>
+                    <li><strong>Unified Rewards:</strong> Students want rewards across multiple dining spots, not just one brand.</li>
+                    <li><strong>Simplified Choices:</strong> Too much information overwhelms; a campus focus works better.</li>
+                    <li><strong>Gamification:</strong> Badges, milestones, and progress tracking can boost engagement.</li>
+                    <li><strong>Reliability:</strong> Rewards must be consistent and dependable.</li>
+                  </ul>
+            </div>
+                <img src="images/aggiepass-companalysis.png">
+            </div>
+                          <p id="randfix" class="rand-text"><strong>Competitive Matrix</strong></p>
 
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  UX Research
-</h3>
-<p><strong>Methods:</strong></p>
-<ul>
-  <li>Competitor Analysis</li>
-  <li>Usability Testing</li>
-  <li>Prototype Testing</li>
-  <li>UCD Student Interviews</li>
-</ul>
+                          <div class="content2">
+              <img src="images/competitor_analysis_quadrant.png" alt="TruckerSay homepage">
+              </div>
+             <p class="rand-text"><strong>Interviews & UX Persona</strong></p>
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <p>After reviewing competitors, we moved on to conducting five student interviews. Our <strong>goal</strong> was to learn about their dining habits, motivations, and frustrations; and uncover what designs/features they do and don't find valuable.</p>
+                <p>Using insights from these conversations, we created a UX persona to help our design decisions. This persona represented the needs of a typical student who wants quick access to dining options, clear information, and meaningful rewards for their meals.</p>
+                <em>Key pain points identified:</em>
+                <ul>
+                    <li>No convenient, accessible platform for viewing campus dining options.</li>
+                    <li>Lack of motivation to buy food on campus due to limited incentives.</li>
+                    <li>Desire for a digital ordering platform integrated with a reward system.</li>
+                </ul>
+            </div>
+                <img src="images/userp.png">
+            </div>
+        </div>
+        <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
 
-<p><strong>Pain Points:</strong> Students expressed that there was not an accessible and convenient platform to access information for dining at UC Davis. We also discovered that there was a lack of motivation to encourage on-campus food purchases, and this helped us recognize the importance for a digital ordering platform integrated with a reward system.</p>
+    <section id="design">
+        <div class="container">
+            <h2>UI/UX Design</h2>
+            <div class="content2">
+              <p>Using insights from our interviews and persona, we created a user flow that showed how students would navigate through the app. The flow gave us a clear outline for our wireframes and focused on the main actions of: logging in, managing your profile, browsing dining options, placing an order, and earning rewards.</p>
+              <img id="c2imgfix" src="images/uiflow.jpg" alt="TruckerSay homepage">
 
-<div class="dashed-line"></div>
+              <p class="rand-text"><strong>Low/Mid-Fidelity Designs</strong></p>
+              <p>With the user flow set, we created low- and mid-fidelity wireframes to map our screens. This let us quickly test layouts while adding features students valued, such as clear menus, dining hours, and tracking rewards.</p>
+                <img id="c2imgfix" src="images/lofi.png" alt="Low-Fi Design">
+              
+                <p class="rand-text"><strong>UI Kit & Design System</strong></p>
+              <p>We then began creating a UI Kit for the app. We chose a different color palette than what is usually associated with UC Davis to help the design stand out, while still using the university’s font to maintain a sense of identity with the school.</p>
+              <img id="c2imgfix" src="images/uikit.png" alt="ui kit">
 
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  UX Personas
-</h3>
-<div class="imageposts">
-  <img src="images/userp.png" alt="ux persona" width="500">
-</div>
-<p>We began by creating a User Persona based off data received from 5 different UCD students to get a better understanding of our potential users.</p>
-
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  User Flow
-</h3>
-<div class="imageposts">
-  <img src="images/uiflow.jpg" alt="user flow">
-</div>
-<p>Using this information and other research, we began to ideate for a User Flow that would match what UCD students are looking for in a campus dining app.</p>
-
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  UI Kit
-</h3>
-<div class="imageposts">
-  <img src="images/uikit.png" alt="UI Kit">
-</div>
-<p>We began creating a UI Kit for our app. We used a different color palette than what is commonly associated with UCD in order to make it stand out, however, we still utilized the UCD's font to maintain some identity to the school.</p>
-
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  Low-Fidelity Design
-</h3>
-<div class="imageposts">
-  <img src="images/lofi.png" alt="Low-Fi Design">
-</div>
-<p>We then began creating our Mid Fidelity Design for our app and testing which features would be best to include.</p>
-
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  Final Design
-</h3>
-<div class="imageposts">
-    <video controls width="600">
-        <source src="images/p1-vid.mp4" type="video/mp4">
-        <source src="images/p1-vid.webm" type="video/webm">
-        <source src="images/p1-vid.ogv" type="video/ogg">
-        Your browser does not support the video tag.
-    </video>
-    </div>
-<p><strong>Final Thoughts:</strong> This was what the final design of the log in and sign up to the app looked like. My takeaways from this project were that I learned to identify preferences among UCD students regarding on-campus dining, as well as to recognize pain points in existing digital platforms</p>
+            </div>
+        </div>
+                <p class="top"><a href="#top">Top ↑</a></p>
 </section>
 
+    <section id="final">
+        <div class="container">
+            <h2>Usability/Prototype Testing & Final Designs</h2>
+            <div class="content2">
+              <p>After building our mid-fidelity wireframes, we conducted usability testing to identify pain points in navigation and layout. The feedback we received helped with our high-fidelity prototypes, where we did prototype testing to evaluate the overall experience of the app. These iterations helped us finalize the design, ensuring it was intuitive and engaging for UC Davis students.</p>
+              <p class="rand-text"><strong>Final App Design</strong></p>
+              <video controls width="600">
+                  <source src="images/p1-vid.mp4" type="video/mp4">
+                  <source src="images/p1-vid.webm" type="video/webm">
+                  <source src="images/p1-vid.ogv" type="video/ogg">
+                  Your browser does not support the video tag.
+              </video>
+               <p class="rand-text"><strong>Final Thoughts</strong></p>
+              <p>Through this project, I learned to identify my target audience's preferences and uncover pain points in existing digital platforms. The experience reinforced how important user research is for validating assumptions and taking design decisions. It also gave me valuable practice in transforming insights into user-centered solutions and refining my design process from research to testing.</p>
+              </div>
+        </div>
+                <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
 <footer>
-    <p><a href="index.html">Victor Barajas Portfolio</a></p>
-    <p><a href="&#118;&#098;&#046;&#118;&#105;&#099;&#116;&#111;&#114;&#046;&#098;&#097;&#114;&#097;&#106;&#097;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email Me</a> </p>
+  © <span id="year"></span> Victor Barajas — Built with HTML, CSS & JS
+    <p><a href="index.html">Portfolio Home</a></p>
 </footer>
+
+<script>
+  // Set dynamic year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

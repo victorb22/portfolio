@@ -13,7 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
     <link href="styles.css" rel="stylesheet">
-
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script></head>
     <script src="script.js" defer></script>
 </head>
 
@@ -22,136 +25,77 @@
         <nav>
             <img src="images/bcardlogo1.svg" alt="Barajas Logo" class="logo" width="50px" height="50px">
         </nav>
-        <h1>My Portfolio</h1>
+        <!-- <h1>My Portfolio</h1> -->
+         <div id="navfix">
+          <a href="#" id="about-navbar" class="contact-button">About</a>
+         <a href="#" id="contact-navbar" class="contact-button2">Contact Me</a>
+         </div>
     </header>
     
     <section class="about" id="about">
+            <img id="container" src="images/mepic.png" alt="Victor B." width="200px" height="200px">
         <div id="aboutTitle">
         <h2>Welcome, I'm Victor Barajas</h2>
-        <p>I'm a UI/UX and Web Designer focused on designing interfaces that are aesthetically pleasing and easy to navigate. Check out my work below!</p>
+        <p>I'm a UI/UX and Web Designer focused on creating interfaces that are both visually appealing and easy to navigate. I also coded this portfolio using HTML, CSS, JavaScript, and APIs to showcase my development skills.<br> <br>Check out my work below!</p>
         </div>
-        <!-- <div id = "container"> -->
-            <img id="container" src="images/mepic.png" alt="Victor B." width="200px" height="200px">
-        <!-- </div> -->
     </section>
     
+            <h2>Projects</h2>
+
     <section class="projects">
 
-        <h2>Projects</h2>
-
-        <div class="project" id="project0">
-            <div class="text-container">
-                <h3>HikeHER Dallas UI/UX Design Internship</h3>
-                <p>Website Redesign for Social Impact Organization</p>
-                <p id="date"><strong>September 2024</strong></p>
-            </div>
-            <div class="image-container">
-                <img src="images/p4-mainpic.png" alt="Project 4 Image">
-                <!-- <a class="rmore" href="postpage4.html"> View Project</a> -->
-            </div>
+         <div class="project" id="project0">
+            <img src="images/p4-mainpic.png" alt="Project 4 Image">
+          <div class="overlay-text">HikeHER Dallas</div>
         </div>
+
        
         <div class="project" id="project1">
-            <div class="text-container">
-                <h3>TruckerSay UI/UX Design Internship</h3>
-                <p>Website Application and Social Platform Design</p>
-                <p id="date"><strong>February 2024</strong></p>
-            </div>
-            <div class="image-container">
                 <img src="images/p3-mainpic.png" alt="Project 3 Image">
-                <!-- <a class="rmore" href="postpage3.html"> View Project</a> -->
-            </div>
+                    <div class="overlay-text">TruckerSay</div>
         </div>
 
-        <div class="project" id="project2">
-            <div class="text-container">
-                <h3>UCD SkillSwap — In Progress</h3>
-                <p>Online Learning Community Web Design with Figma</p>
-                <p id="date"><strong>March 2025</strong></p>
-            </div>
-            <div class="image-container">
-                <img src="images/p7-mainpic.png" alt="Project 7 Image">
-                <!-- <a class="rmore" href="postpage9.html"> View Project</a> -->
-            </div>
+        <div class="project" id="project8">
+                <img src="images/ap.png" alt="Project 1 Image">
+                    <div class="overlay-text">Aggie Pass</div>
         </div>
 
-        <div class="project" id="project3">
-            <div class="text-container">
-                <h3>Image Slideshows and Overlays with JavaScript</h3>
-                <p>Web Design with Figma, HTML, CSS, & JavaScript</p>
-                <p id="date"><strong>February 2025</strong></p>
-            </div>
-            <div class="image-container">
-                <img src="images/p8-mainpic.png" alt="Project 8 Image">
-                <!-- <a class="rmore" href="postpage8.html"> View Project</a> -->
-            </div>
+        <div class="project" id="post11">
+                <img src="images/goodreads-mainpic.png" alt="Project Image">
+                    <div class="overlay-text">Goodreads</div>
         </div>
 
-        <div class="project" id="project4">
-            <div class="text-container">
-                <h3>JavaScript Form MadLibs Game</h3>
-                <p>Web Design with Figma, HTML, CSS, & JavaScript</p>
-                <p id="date"><strong>February 2025</strong></p>
-            </div>
-            <div class="image-container">
-                <img src="images/p9-mainpic.png" alt="Project 9 Image">
-                <!-- <a class="rmore" href="postpage7.html"> View Project</a> -->
-            </div>
+        <div class="project" id="post10">
+                <img src="images/tsaymainpic-mobile.png" alt="Project Image">
+                    <div class="overlay-text">TruckerSay Mobile</div>
         </div>
 
-        <div class="project" id="project5">
-            <div class="text-container">
-                <h3>Portal Page with CSS Animations</h3>
-                <p>Web Design with Figma, HTML & CSS</p>
-                <p id="date"><strong>January 2025</strong></p>
-            </div>
-            <div class="image-container">
-                <img src="images/p6-mainpic.png" alt="Project 6 Image">
-                <!-- <a class="rmore" href="postpage6.html"> View Project</a> -->
-            </div>
+        <div class="project" id="project7">
+                <img src="images/mobileappslide_des115 copy.png" alt="Project 2 Image">
+                    <div class="overlay-text">Outside Fits</div>
         </div>
 
         <div class="project" id="project6">
-            <div class="text-container">
-                <h3>Monument Initiative Center</h3>
-                <p>Nonprofit Website Design with Figma</p>
-                <p id="date"><strong>April 2024</strong></p>
-            </div>
-            <div class="image-container">
                 <img src="images/p5-mainpic.png" alt="Project 5 Image">
-                <!-- <a class="rmore" href="postpage5.html"> View Project</a> -->
-            </div>
+                     <div class="overlay-text">Monument Initiative Center</div>
+        </div>
+
+        <div class="project" id="project2">
+                <img src="images/skillsw-main.png" alt="Project 7 Image">
+                    <div class="overlay-text">SkillSwap</div>
         </div>
         
-        <div class="project" id="project7">
-            <div class="text-container">
-                <h3>OutsFits — Addressing Fast Fashion</h3>
-                <p>Social E-Commerce App with Figma</p>
-                <p id="date"><strong>March 2024</strong></p>
-            </div>
-            <div class="image-container">
-                <img src="images/mobileappslide_des115 copy.png" alt="Project 2 Image">
-                <!-- <a class="rmore" href="postpage2.html"> View Project</a> -->
-            </div>
-        </div>
-        
-        <div class="project" id="project8">
-            <div class="text-container">
-                <h3>AggiePass</h3>
-                <p>Food Ordering & Rewards Mobile App with Figma</p>
-                <p id="date"><strong>September 2023</strong></p>
-            </div>
-            <div class="image-container">
-                <img src="images/ap.png" alt="Project 1 Image">
-                <!-- <a class="rmore" href="postpage1.html"> View Project</a> -->
-            </div>
-        </div>
     </section>
     
-    <footer>
-        <p><a href="index.html">Victor Barajas Portfolio</a></p>
-        <p><a href="&#118;&#098;&#046;&#118;&#105;&#099;&#116;&#111;&#114;&#046;&#098;&#097;&#114;&#097;&#106;&#097;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email Me</a> </p>
-    </footer>
+<footer>
+  © <span id="year"></span> Victor Barajas — Built with HTML, CSS & JS
+</footer>
+
+<script>
+  // Set dynamic year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 
 </body>
 

@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nonprofit Website Design</title>
+    <title>MIC Website Design</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-
-	  <link href="styles.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -21,131 +25,143 @@
 <header>
   <a href="index.html"><img src="images/bcardlogo1.svg" alt="Barajas Logo" class="logo" width="50px" height="50px"></a>
 <nav>
-  <a href="postpage2.html">Previous Project</a>
-  <a href="postpage6.html">Next Project</a>
+  <a href="postpage2.html">&larr; Back</a>
+  <a href="postpage9.html">Next &rarr;</a>
 </nav>
 </header>
 
-<section id="post">
-
 <div class="project-details"> 
-<h2>Nonprofit Website Design — Monument Initiative Center</h2>
+<h2>Monument Initiative Center Web Design</h2>
 <div class="picp">
 <img src="images/p5-mainpic.png" alt="Project 5 Image">
 </div>
-<p><strong>Date:</strong> April 2024</p>
+<!-- <p><strong>Date:</strong> April 2024</p> -->
 </div>
 
-<div class="dashed-line"></div>
+    <nav id="postnav">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#design">UI/UX Design</a></li>
+            <!-- <li><a href="#revisions">Revisions</a></li> -->
+            <li><a href="#final">Final Design</a></li>
+        </ul>
+    </nav>
 
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  Background
-</h3>
-<p><strong>Context:</strong> Growing up in the East Bay, specifically Concord, CA, I volunteered at a nonprofit called Monument Crisis Center that served low-income households and immigrants and refugees in my local community. As a UI/UX project, I decided to make a mockup website design for a nonprofit with similar services that would be called Monument Initiative Center. My goal was to research nonprofits and their websites to improve upon websites that are currently out there.</p>
-<p><strong>Role:</strong> UI/UX Designer</p>
-<p><strong>Project Type:</strong> Website Design with Figma</p>
+    <section id="overview">
+        <div class="container">
+            <h2>Overview</h2>
+            <div class="content">
+                <p>Growing up in Concord, CA, I volunteered at Monument Crisis Center, a nonprofit supporting low-income households and immigrants and refugees.</p>
+                <p>For this UI/UX project, I created a mockup website called Monument Initiative Center, inspired by nonprofits with similar missions.</p>
+                <p>My <strong>goal</strong> was to research existing nonprofit websites, identify areas for improvement, and design a more user-friendly, effective digital experience.</p>
+              <p><strong>Role:</strong> UI/UX Designer</p>
+                <p><strong>Purpose:</strong> Design project</p>
+                <p><strong>Project Type:</strong> Web Design with Figma</p>
+            </div>
+        </div>
+         <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
 
-<div class="dashed-line"></div>
+    <section id="research">
+        <div class="container">
+            <h2>UX Research</h2>
+            <div class="content2">
+                <p>To inform my design, I conducted a competitor analysis of two nonprofits that currently serve the area and population demographic I am making this website mockup for: Monument Crisis Center and Monument Impact.<br> <br>I examined their websites’ layouts, navigation, content organization, and accessibility to identify strengths, weaknesses, and opportunities for improvement. Insights from this analysis helped guide decisions about structure, functionality, and user experience in my own design.</p>
+                <img src="images/p5-redesign2.png" alt="Monument crisis center website">
+                <p>Analyzing Monument Crisis Center’s website revealed potential pain points common to nonprofit sites. The landing page is crowded with text and information, which can overwhelm visitors, and the unclear hierarchy and page layout create friction during navigation. Identifying these challenges helped me understand where improvements could be made to create a clearer, more user-friendly experience in my own design.</p>
+                <img src="images/p5-redesign1.png" alt="Monument Impact website">
+                <p>Monument Impact’s website showed improvements in clarity, hierarchy, and layout compared to other nonprofit sites. However, there were still opportunities to enhance the user experience, particularly with call-to-action buttons, section organization, and overall flow.</p>
+            </div>
+          <p id="randfix" class="rand-text"><strong>User Research</strong></p>
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <p>To better understand the audience this nonprofit—and others with similar missions—could serve, I started by looking at demographic and behavioral data from the target region.</p>
+              </div>
+                <img src="images/p5-research2.png" alt="user demographic data">
+            </div>
+            <div class="content1 space-fix">
+              <div class="content1stack">
+                <p>From this information, I created user personas that reflected the community’s common barriers, device/media usage, and everyday needs. This helped me shape design decisions around what would be most useful and accessible for them.</p>
+              </div>
+                <img src="images/p5-research1.png" alt="user demographic data">
+            </div>
+          <p id="randfix" class="rand-text"><strong>UX Personas</strong></p>
+            <div class="content2">
+            <p>Based on the data I collected, I created three user personas that represent potential visitors to the nonprofit’s site. Each persona highlights different goals, challenges, and motivations—ranging from seeking general information to accessing specific resources. These personas helped me keep the design focused on real user needs and ensured that features and content would support a diverse set of visitors.</p>
+             <img src="images/p5-persona1.png" alt="user persona">
+             <img src="images/p5-persona2.png" alt="user persona">
+             <img src="images/p5-persona3.png" alt="user persona">
+            </div>
+        </div>
+         <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
 
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  UI/UX Research
-</h3>
-<p><strong>Methods:</strong></p>
-<ul>
-  <li>Competitor Analysis</li>
-  <li>Target Audience / User Research</li>
-</ul>
+    <section id="design">
+        <div class="container">
+            <h2>UI/UX Design</h2>
+          <div class="content2">
+            <p>I created a content outline to make sure the nonprofit’s resources would be clear and easy to access from the homepage. Nonprofit websites often have a large amount of information about services, programs, and the organization itself, so mapping out the content early allowed me to organize everything into a logical structure. This step helped me identify priorities, avoid missing key information, and set the foundation for a site that feels approachable and easy to navigate.</p>
+            <img src="images/p5-content-outline.png" alt="website content outline">
+          </div>
+            <p id="randfix" class="rand-text"><strong>Low-Fidelity Designs (Desktop View)</strong></p>
+          <div class="content2">
+            <p>After finalizing the content outline, I moved on to low-fidelity sketches on paper for the desktop view. This allowed me to quickly explore layout options and see how the content structure could be made into a clear interface. Working on paper allowed me to test different ways of presenting resources, navigation, and CTAs without being limited by visual design details.</p>
+            <img src="images/p5-lofi-1.png" alt="desktop lo-fi design">
+            <img src="images/p5-lofi-2.png" alt="desktop lo-fi design">
+          </div>
+            <p id="randfix" class="rand-text"><strong>Low-Fidelity Designs (Mobile View)</strong></p>
+          <div class="content2">
+            <p>It was important for me to include mobile view as many people in our target audience have limited access to technology, so I had to consider the user and accesibility. It is often the case where they are viewing the site from their mobile phone, so a mobile view makes sense and offers an inclusive and user-centered design.</p>
+            <img src="images/p5-mobile-lofi.png" alt="mobile lo-fi design">
+          </div>
+         <p class="rand-text"><strong>UI Kit</strong></p>
+          <div class="content1 space-fix">
+              <div class="content1stack">
+                <p>To establish consistency across the site, I created a UI kit that included the color palette, typography, logo usage, and core components such as buttons and form elements.<br> <br>I then applied the colors, typography, and components across the final designs, and did prototype testing with 6 of my peers and received help with making my site more user-friendly and organized.<br> <br>This brought consistency to both desktop and mobile views, creating a cohesive experience that is accessible and easy to navigate through informational content.</p>
+              </div>
+                <img src="images/p5-designsystm.png" alt="design system">
+          </div>
+       </div>
+                <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
 
-<p><strong>Potential Pain Points:</strong> Existing nonprofit websites can be hard to navigate due to the excess of information trying to be presented to the user. Friction is often encountered during navigation as a result of an unclear hierarchy and poor page layout organization.</p>
-<p>I started off my research by visiting and reviewing the websites of 2 nonprofits that currently serve the area and population demographic I am making this website mockup for. The first was Monument Crisis Center, which has a crowded landing page with a lot of text and information that can be overwhelming for site visitors.</p>
-
-<div class="imageposts">
-    <img src="images/p5-redesign2.png" alt="Monument crisis center website" width="800">
-</div>
-
-<p>The second nonprofit was Monument Impact which is also located in Concord, CA. There website was an improvement but could still work on some of its call to action buttons and sections, as well as its user experience.</p>
-
-<div class="imageposts">
-    <img src="images/p5-redesign1.png" alt="Monument Impact website" width="800">
-</div>
-
-<p>I then looked to learn more about the demographic of people this nonprofit and those similar to it could serve. I began with listing different demographic data and creating user personas based on the location I was focusing on and existing population.</p>
-
-<div class="imageposts">
-    <img src="images/p5-research2.png" alt="user demographic data" width="800">
-</div>
-<div class="imageposts">
-    <img src="images/p5-research1.png" alt="user demographic data" width="800">
-</div>
-
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  UX Personas
-</h3>
-<p>Based off this data collected, I created 3 user personas for potential people that could be visiting our site in search of general information or the resources we provide as a nonprofit.</p>
-<div class="imageposts">
-  <img src="images/p5-persona1.png" alt="user persona" width="800">
-</div>
-<div class="imageposts">
-    <img src="images/p5-persona2.png" alt="user persona" width="800">
-</div>
-<div class="imageposts">
-    <img src="images/p5-persona3.png" alt="user persona" width="800">
-</div>
-
-<h3>
-    <img src="images/rect.svg" alt="dash">
-    Low-Fidelity Designs
-</h3>
-<p>I began with creating a content outline bacuase I knew how important it was to ensure the resources the nonprofit provides are clear and easily accessible from the homepage. There is also often a lot of information about services and the organization on nonprofit websites so I wanted to make sure I didn't miss anything and had everything laid out in an organized structure.</p>
-<div class="imageposts">
-    <img src="images/p5-content-outline.png" alt="website content outline" width="800">
-</div>
-<p>From here, I moved onto low-fidelity designs, first for desktop, and then for mobile view.</p>
-<div class="imageposts">
-    <img src="images/p5-lofi-1.png" alt="desktop lo-fi design" width="400">
-</div>
-<div class="imageposts">
-    <img src="images/p5-lofi-2.png" alt="desktop lo-fi design" width="400">
-</div>
-<p>It was important for me to include mobile view as many people in our target audience have limited access to technology, so I had to consider the user and accesibility. It is often the case where they are viewing the site from their mobile phone, so a mobile view makes sense and offers an inclusive and user-centered design.</p>
-<div class="imageposts">
-    <img src="images/p5-mobile-lofi.png" alt="desktop lo-fi design" width="400">
-</div>
-
-
-<h3>
-  <img src="images/rect.svg" alt="dash">
-  Final Designs for Mobile & Desktop
-</h3>
-<div class="imageposts">
-    <img src="images/p5-designsystm.png" alt="design system" width="400">
-</div>
-<div class="imageposts">
-    <video controls width="600">
-        <source src="images/p5-desktop-finalvid.mov" type="video/mp4">
-        <source src="images/p5-desktop-finalvid.webm" type="video/webm">
-        <source src="images/p5-desktop-finalvid.ogv" type="video/ogg">
-        Your browser does not support the video tag.
-    </video>
-    </div>
-<div class="imageposts">
-        <video controls width="600">
+        <section id="final">
+      <div class="container">
+          <h2>Final Design</h2>
+          <div class="content2">
+            <p>My goal with this website was to create a clear and resourceful platform for a nonprofit serving primarily low-income, immigrant families and residents. I focused on making information easy to find for both those seeking assistance and those interested in donating.<br> <br>To achieve this, I used color and title hierarchies for clear navigation, along with spacing and containers to prevent the site from feeling text-heavy. Since many in the target audience are ESL speakers, I emphasized translation options and highlighted programs such as ESL and professional development classes.</p>
+            <video controls width="600">
+                <source src="images/p5-desktop-finalvid.mov" type="video/mp4">
+                <source src="images/p5-desktop-finalvid.webm" type="video/webm">
+                <source src="images/p5-desktop-finalvid.ogv" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <video controls width="600">
             <source src="images/p5-mobile-finalvid.mov" type="video/mp4">
             <source src="images/p5-mobile-finalvid.webm" type="video/webm">
             <source src="images/p5-mobile-finalvid.ogv" type="video/ogg">
             Your browser does not support the video tag.
         </video>
-</div>
-<p><strong>Final Thoughts:</strong> With this website, my goal was to create an informative and resourceful website for a non-profit that serves majority low-income, immigrant families and residents. My intention was to make information clear to those looking to donate or looking for assistance. I accomplished this through my color and title hierarchies that helped lay out the main sections of the website. I also tried using spacing and boxes to help separate information so as to not appear so wordy. Since my target audience includes those that are ESL, I also wanted to make a translation button stand out and offer services such as ESL and professional development classes on my website. What I am most proud of with this website is the layout. In the end, it was fun to explore a new industry and their websites, I really think this project strengthened my research skills and helped me be more considerate of users when designing.</p>
-</section>
+          <p class="rand-text"><strong>Final Thoughts</strong></p>
+            <p>With this project, I was able to experiment with layout, while trying to balance clarity with accessibility. I made sure to include features that made the site informative and practical for users—such as an events calendar to keep the community updated and card layouts that make resources easier to scan at a glance. These design choices ensured that the site wasn’t just visually clear, but also actionable for users who need quick access to information. This project gave me the chance to explore a new industry, strengthen my research process, and become more intentional about designing with users’ needs in mind.</p>
+         </div>
+       </div>  
+            <p class="top"><a href="#top">Top ↑</a></p>
+    </section>
+
+
+
 
 <footer>
-    <p><a href="index.html">Victor Barajas Portfolio</a></p>
-    <p><a href="&#118;&#098;&#046;&#118;&#105;&#099;&#116;&#111;&#114;&#046;&#098;&#097;&#114;&#097;&#106;&#097;&#115;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email Me</a> </p>
+  © <span id="year"></span> Victor Barajas — Built with HTML, CSS & JS
+    <p><a href="index.html">Portfolio Home</a></p>
 </footer>
+
+<script>
+  // Set dynamic year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
