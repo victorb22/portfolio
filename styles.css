@@ -81,6 +81,29 @@ header a:visited{
   ul li{
     line-height: 1.6em;
   }
+
+  /* About section fill animation */
+#about {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-fill {
+  position: absolute;
+  inset: 0;                     /* cover the entire section */
+  background: #ffffff;          /* white fill */
+  /* alternative: background: rgba(0,0,0,0.08); for light grey */
+  transform: scaleX(0);         /* start hidden */
+  transform-origin: left;       /* grow left → right */
+  z-index: 0;                   /* behind content */
+}
+
+/* Keep the content above the fill */
+#about > *:not(.about-fill) {
+  position: relative;
+  z-index: 1;
+}
+
   
   body {
       /* margin: 0; */
@@ -117,6 +140,7 @@ header a:visited{
       padding: 1em;
       text-align: center;
       width: 100%;
+      max-height: 70px;
   }
   
   header img{
@@ -296,10 +320,12 @@ header a:visited{
   
   .project-details {
       padding: 2em;
-      background-color: #ECF9FF;
+      padding-bottom: 120px;
+      background-color: white;
       border-radius: 8px;
-      margin: 0 auto;
+      margin: 0 auto 50px auto;
       width: 100%;
+      margin-left: 70px;
       /* display: flex;
       flex-direction: column; */
       img{
@@ -335,62 +361,6 @@ header a:visited{
       background-color: #f9f9f9;
   }
 
-  /* #postnav {
-    background: linear-gradient(
-    135deg, 
-    #000000 0%, 
-    #131313 20%, 
-    #303030 45%, 
-    #5f5f5f 70%, 
-    #898989 85%, 
-    #dddddd 100%
-  );
-
-    max-width: 900px;
-    margin: auto auto 100px auto;
-    border-radius: 50px;
-    font-size: 16px;
-} */
-
-/* Sidebar nav */
-#postnav {
-  position: fixed;
-  top: 185px;
-  left: 20px;
-  width: 160px;                    /* thinner width */
-  background: rgba(0, 0, 0, 0.5);   /* semi-transparent black */
-  border-radius: 10px;
-  padding: 15px 8px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-  font-size: 15px;                  /* slightly smaller text */
-  z-index: 1000;                    /* stays on top */
-}
-
-#postnav ul {
-  display: flex;
-  flex-direction: column;  
-  gap: 6px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#postnav ul li a {
-  display: block;
-  white-space: nowrap;              /* keeps text in one line */
-  padding: 8px 12px;
-  border-radius: 6px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s, color 0.3s;
-}
-
-#postnav ul li a:hover {
-  /* background: rgba(101, 169, 246, 0.9); */
-  color: #000;
-}
-
 #postnav ul li a.active {
   background: rgba(101, 169, 246, 1);
   color: #000;
@@ -401,32 +371,44 @@ header a:visited{
   color: black;
 }
 
+#postnav {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 170px;                 /* make it wider */
+  height: 100vh;                /* full viewport height */
+  background: rgba(0, 0, 0, 0.9); /* darker for contrast */
+  padding: 40px 20px;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
-
-/* #postnav ul{
-        padding-left: 0;
-
+#postnav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 #postnav ul li a {
-    list-style: none;   
-    text-decoration: none;
-    display: block;
-    border-radius: 25px;
-    color:white;
-    font-weight: 500;
-    text-align: center;
-    padding: 10px;
-} */
-
-/* #postnav ul li a:hover{
-    background-color: white;
-    color: black;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 9px;
+  transition: color 0.3s ease;
 }
 
-#postnav-click{
-    background-color: white;
-} */
+#postnav ul li a:hover {
+  color: #65a9f6; /* your accent blue */
+}
 
 #postnav li::marker {
   content: none; 
@@ -480,6 +462,16 @@ header a:visited{
       padding: 30px;
   }
 
+  #downarrow{
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+    #downarrow:visited{
+      color: black;
+  }
+
   .top{
     display: block;
     padding: 14px;
@@ -491,7 +483,7 @@ header a:visited{
     border-radius: 30px;
     /* border: 2px solid black; */
     width: 100px;
-    margin: auto;
+    margin: auto auto auto 725px;
 
       opacity: 0.2;
   transform: translateY(40px);
@@ -526,6 +518,9 @@ header a:visited{
               padding: 1em;
               background-color: black;
               color: white;
+                position: sticky;
+  top: 0;
+  z-index: 1000;
           }
 
             .rand-text{
@@ -564,16 +559,16 @@ header a:visited{
             display: flex;
             align-items: center;
             gap: 80px;
-            margin: auto auto 65px auto;
+            margin: auto auto 50px auto;
             background-color:#ECF9FF;
-            padding:110px 80px 110px 80px;
+            padding:110px 80px 250px 80px;
           }
 
           #about h2{
             text-align: left;
             padding: 0;
             font-size: 2em;
-            color: #00458b;
+            color: black;
           }
 
           #aboutTitle{
@@ -581,6 +576,7 @@ header a:visited{
             flex-direction: column;
             width: 50%;
             flex: 1;
+            padding-bottom: 0px;
           }
 
           #container img{
@@ -602,7 +598,7 @@ header a:visited{
           .projects {
               width: 100%;
               max-width: 1200px;
-              margin: auto;
+              margin: 20px auto auto auto;
             display: grid;
             grid-template-columns: repeat(3, 1.5fr);
             gap: 35px;
@@ -680,7 +676,9 @@ header a:visited{
 }
 
 @media only screen and (min-width: 1000px) {
-    .container{ margin: auto; }
+    .container{
+    margin: auto auto 55px 250px; 
+  }
     nav ul {
         max-width: 1000px;
         margin: auto;

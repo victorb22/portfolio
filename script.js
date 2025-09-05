@@ -132,6 +132,17 @@ if (document.querySelector('#about')) {
       }
     });
 
+    // Animate fill across the entire about section
+gsap.to(".about-fill", {
+  scaleX: 1,
+  duration: 1.3,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: "#about",
+    start: "top 80%"  // begins when about section scrolls into view
+  }
+});
+
     gsap.from("#aboutTitle p", {
       x: 60,
       opacity: 0,
