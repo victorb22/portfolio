@@ -4,8 +4,6 @@
 
   .arrow{
     font-size: 18px; /* increase size of the arrow */
-    /* width: 80px;
-    height: 80px; */
     cursor: pointer;
   }
   
@@ -17,14 +15,11 @@
   text-decoration: none;
   border-radius: 20px;
   font-weight: bold;
-  /* border: 1px solid white; */
   transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
   background-color: rgb(23, 23, 23);
-    /* border: 1px solid black; */
-    /* color: black; */
 }
 
 .contact-button2 {
@@ -70,12 +65,10 @@
 
 header a:link{
       text-decoration: none;
-      /* color: white; */
   }
   
 header a:visited{
       text-decoration: none;
-      /* color: white; */
   }
 
   ul li{
@@ -92,7 +85,6 @@ header a:visited{
   position: absolute;
   inset: 0;                     /* cover the entire section */
   background: #ffffff;          /* white fill */
-  /* alternative: background: rgba(0,0,0,0.08); for light grey */
   transform: scaleX(0);         /* start hidden */
   transform-origin: left;       /* grow left → right */
   z-index: 0;                   /* behind content */
@@ -106,14 +98,9 @@ header a:visited{
 
   
   body {
-      /* margin: 0; */
       padding: 0;
-
-      /* background-color: #f9f9f9; */
-      
       font-family: 'Poppins', sans-serif;
                   background-color:#ECF9FF;
-
   }
   
   
@@ -135,7 +122,6 @@ header a:visited{
   }
   
   header {
-      /* background-color: #000; */
       color: white;
       padding: 1em;
       text-align: center;
@@ -145,7 +131,6 @@ header a:visited{
   
   header img{
       text-align: center;
-      /* margin-left: 15px; */
       cursor: pointer;
   }
 
@@ -159,7 +144,6 @@ header a:visited{
   }
 
   header nav a:hover {
-    /* transform: scale(.3); */
     color: #65a9f6;
 }
 
@@ -188,23 +172,14 @@ header a:visited{
   }
   
   .project {
-    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* background: linear-gradient(45deg, #8eace0, #0050A0, #65a9f6); */
-    /* background-size: 300% 300%; */
-
-    
-      /* padding: 1rem; */
       color: black;
       margin-bottom: 1em;
       border-radius: 8px;
       text-align: center;
-      /* max-height: 500px; */
-      /* border: 1.5px solid rgb(216, 216, 216); */
   }
   
   .project:hover{
-    /* opacity: .09; */
       transform: scale(1.05);
       animation: gradientShift 3.2s ease infinite;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -281,9 +256,6 @@ header a:visited{
   
   .project img {
       display: block;
-      /* max-width: 100%; */
-      /* max-height: 283px; */
-      /* width: 330px; */
       width: 100%;
       height: auto; 
       border-radius: 8px;
@@ -323,11 +295,9 @@ header a:visited{
       padding-bottom: 120px;
       background-color: white;
       border-radius: 8px;
-      margin: 0 auto 50px auto;
+      margin: 0 auto 20px auto;
       width: 100%;
       margin-left: 70px;
-      /* display: flex;
-      flex-direction: column; */
       img{
           max-width: 300px;
           height: auto;
@@ -354,8 +324,6 @@ header a:visited{
   }
   
   #post{
-      /* display: flex;
-      flex-direction: column; */
       justify-content: center;
       align-items: center;
       background-color: #f9f9f9;
@@ -417,7 +385,6 @@ header a:visited{
 }
 
 #postnav ul li a:hover {
-    /* background-color: white; */
     color: #65a9f6;
     cursor: pointer;
 }
@@ -440,14 +407,12 @@ header a:visited{
   #post p{
       padding: 30px;
       line-height: 1.6em;
-      /* max-width: 200px; */
   }
   
   #post h3 {
       display: flex;
       gap: 20px; /* Adjust the space between the icon and text */
       padding: 50px;
-      /* justify-content: center; */
   }
   
   .imageposts img{
@@ -472,6 +437,16 @@ header a:visited{
       color: black;
   }
 
+  #downarrow2{
+    margin: auto auto auto 115px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+    #downarrow2:visited{
+      color: black;
+  }
+
   .top{
     display: block;
     padding: 14px;
@@ -479,9 +454,7 @@ header a:visited{
     color:black;
     font-size: 16px;
     font-weight: 700;
-    /* background-color: white; */
     border-radius: 30px;
-    /* border: 2px solid black; */
     width: 100px;
     margin: auto auto auto 725px;
 
@@ -492,7 +465,6 @@ header a:visited{
 
   .top:hover{
     font-size: 16.5px;
-    /* color: #65a9f6; */
     color: #000;
     cursor: pointer;
   }
@@ -533,18 +505,15 @@ header a:visited{
           header h1 {
               margin: 0; 
               font-size: 22px;
-              /* text-align: left; */
               text-align: right;
               padding-right: 15px; 
           }
           
           header nav {
-              /* display: flex;  */
               gap: .85em;
           }
       
           header img{
-              /* margin-right: 15px; */
               margin-left: 20px;
           }
           
@@ -588,10 +557,6 @@ header a:visited{
             font-size: 1em;
             line-height: 1.5em;
             width: 850px;
-            /* width: 1000px; */
-            /* text-align: center; */
-            /* margin: auto; */
-            /* padding-top: 30px; */
         }
   
           /* Ensure the entire Projects Section Uses Full Width */
@@ -602,7 +567,6 @@ header a:visited{
             display: grid;
             grid-template-columns: repeat(3, 1.5fr);
             gap: 35px;
-              /* padding: 2rem; */
           }
       
           /* Make Each Project Take Up Full Width */
@@ -610,9 +574,6 @@ header a:visited{
               display: grid;
               /* grid-template-columns: auto 1fr;  */
               align-items: center;
-              /* gap: 3.5rem; */
-              /* padding: 2rem; */
-              /* height: 330px; */
               width: 100%;
               cursor: pointer;
           }
@@ -771,6 +732,7 @@ header a:visited{
   place-items: center;
   padding: 3rem 1rem;
   min-height: 100vh;
+  margin: auto;
 }
 
 #contact-page {
@@ -819,9 +781,6 @@ header a:visited{
 #contact-page .img-wrap {
   display: grid;
   margin: auto;
-
-  /* background: #0b0d12; */
-  /* border: 1px solid #1e2330; */
   border-radius: .9rem;
   height: 400px;
   aspect-ratio: 1 / 1;
